@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TP5_MARASCH_TAGLIORETTI_WICNUDEL")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+953ddf5afd4ddf3934d5f584ba9945b716ddd110")]
 [assembly: System.Reflection.AssemblyProductAttribute("TP5_MARASCH_TAGLIORETTI_WICNUDEL")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TP5_MARASCH_TAGLIORETTI_WICNUDEL")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

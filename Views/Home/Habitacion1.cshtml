@@ -2,11 +2,17 @@
     ViewData["Title"] = "Sala de Control";
 }
 
-<h1>Sala de Control</h1>
-<p>La sala de control está llena de terminales, pantallas parpadeantes y mapas estelares. La iluminación es tenue y el ambiente está impregnado de una sensación de peligro inminente.</p>
-
-<h2>Hackeo de Terminal</h2>
-<p>Decodifica el mensaje en código Morse para obtener la contraseña:</p>
+<style>
+body{
+    background-image: url("../../imagenes/Imagen2.png");
+}
+</style>
+<div class="div-texto-habitacion1">
+    <h1>Sala de Control</h1>
+    <p>La sala de control está llena de terminales, pantallas parpadeantes y mapas estelares. La iluminación es tenue y el ambiente está impregnado de una sensación de peligro inminente.</p>
+    <h2>Hackeo de Terminal</h2>
+    <p>Decodifica el mensaje en código Morse para obtener la contraseña:</p>
+</div>
 <img src="~/imagenes/código_morse.png"/>
 <img src="~/imagenes/traduccion_morse.png"/>
 <form Action='@Url.Action("Habitacion")'>

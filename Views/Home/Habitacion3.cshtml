@@ -2,11 +2,17 @@
     ViewData["Title"] = "Laboratorio Médico";
 }
 
-<h1>Laboratorio Médico</h1>
-<p>La habitación está equipada con camillas, monitores médicos y varios frascos de productos químicos. Hay manchas de sangre y signos de lucha por todas partes.</p>
-
-<h2>Debilidad del Alien</h2>
-<p>Ingresa el nombre del jugador de fútbol favorito del alien para obtener el antídoto:</p>
+<style>
+body{
+    background-image: url("../../imagenes/Imagen4.png");
+}
+</style>
+<div class="div-texto-habitacion3">
+    <h1>Laboratorio Médico</h1>
+    <p>La habitación está equipada con camillas, monitores médicos y varios frascos de productos químicos. Hay manchas de sangre y signos de lucha por todas partes.</p>
+    <h2>Debilidad del Alien</h2>
+    <p>Ingresa el nombre del jugador de fútbol favorito del alien para obtener el antídoto:</p>
+</div>
 <form Action='@Url.Action("Habitacion")'>
     <input type="hidden" name="sala" value="3" />
     <input type="text" name="clave" placeholder="Ingresa el nombre del jugador(primera letra en mayuscula)" />

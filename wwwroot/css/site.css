@@ -1,21 +1,39 @@
 
 body {
-  background-color: #000; /* Fondo negro para dar sensación de espacio */
-  color: #fff; /* Texto blanco para contraste */
-  font-family: 'Courier New', Courier, monospace; /* Tipografía monoespaciada para una sensación futurista */
+  font-family: 'Courier New', Courier, monospace; 
   text-align: center;
   margin: 0;
-  padding: 0;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 button:focus {
   outline: none;
 }
+.div-texto-habitacion1{
+  border: 2px solid #333; 
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.8);
+  box-shadow: 0 0 15px rgba(0, 255, 0, 0.3);
+}
+.div-texto-habitacion2{
+  border: 2px solid #333; 
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.8);
+  box-shadow: 0 0 15px rgba(0, 255, 0, 0.3);
+}
 
+.div-texto-habitacion3{
+  border: 2px solid #333; 
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.8);
+  box-shadow: 0 0 15px rgba(0, 255, 0, 0.3);
+}
+
+.div-texto-habitacion4{
+  border: 2px solid #333; 
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.8);
+  box-shadow: 0 0 15px rgba(0, 255, 0, 0.3);
+}
 .room {
   display: none; 
   width: 80%;
