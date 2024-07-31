@@ -1,0 +1,20 @@
+@{
+    ViewData["Title"] = "Sala de Mantenimiento";
+}
+
+<h1>Sala de Mantenimiento</h1>
+<p>Una sala llena de herramientas, cajas de suministros y paneles eléctricos. El aire está pesado con el olor a metal y aceite.</p>
+
+<h2>Caja de Herramientas</h2>
+<p>Encuentra el código para abrir la caja de herramientas:</p>
+<form Action='@Url.Action("Habitacion")'>
+    <input type="hidden" name="sala" value="2" />
+    <input type="text" name="clave" placeholder="Ingresa el código" />
+    <button type="submit">Enviar</button>
+</form>
+<button onclick="alert('Pista 1: Año de lanzamiento de la primera película de Alien')">Pista 1</button>
+<button onclick="alert('Pista 2: El año tiene cuatro dígitos')">Pista 2</button>
+@if(ViewBag.Error != null)
+{
+    <p>@ViewBag.Error</p>
+}

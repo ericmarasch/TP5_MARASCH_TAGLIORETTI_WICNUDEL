@@ -1,0 +1,22 @@
+@{
+    ViewData["Title"] = "Sala de Control";
+}
+
+<h1>Sala de Control</h1>
+<p>La sala de control está llena de terminales, pantallas parpadeantes y mapas estelares. La iluminación es tenue y el ambiente está impregnado de una sensación de peligro inminente.</p>
+
+<h2>Hackeo de Terminal</h2>
+<p>Decodifica el mensaje en código Morse para obtener la contraseña:</p>
+<img src="~/imagenes/código_morse.png"/>
+<img src="~/imagenes/traduccion_morse.png"/>
+<form Action='@Url.Action("Habitacion")'>
+    <input type="hidden" id = "sala" name="sala" value="1" />
+    <input type="text" id = "clave" name="clave" placeholder="Ingresa la contraseña(primera letra en mayuscula)"/>
+    <button type="submit">Enviar</button>
+</form>
+<button onclick="alert('Pista 1: Lee la comparación de lenguaje de código morse')">Pista 1</button>
+<button onclick="alert('Pista 2: El mensaje revela al protagonista de la sala')">Pista 2</button>
+@if(ViewBag.Error != null)
+{
+    <p>@ViewBag.Error</p>
+}

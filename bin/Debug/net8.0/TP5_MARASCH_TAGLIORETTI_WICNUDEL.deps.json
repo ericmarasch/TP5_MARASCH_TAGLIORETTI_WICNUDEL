@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "TP5_MARASCH_TAGLIORETTI_WICNUDEL/1.0.0": {
+        "runtime": {
+          "TP5_MARASCH_TAGLIORETTI_WICNUDEL.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "TP5_MARASCH_TAGLIORETTI_WICNUDEL/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

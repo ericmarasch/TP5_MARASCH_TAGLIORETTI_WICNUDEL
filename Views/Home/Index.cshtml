@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atrapados en la Nostromo</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <div id="intro" class="room active">
+        <h1>Atrapados en la Nostromo</h1>
+        <p>Eres parte de un equipo de rescate enviado a la nave espacial Nostromo...</p>
+        <button onclick="location.href='@Url.Action("Habitacion1")'">Comenzar</button>
+    </div>
+
+    <div id="control" class="room">
+        <h2>Sala de Control</h2>
+        <p>Reactiva los sistemas principales de la nave para acceder a las otras áreas.</p>
+        <button data-room="mantenimiento">Siguiente Sala</button>
+    </div>
+
+    <div id="mantenimiento" class="room">
+        <h2>Sala de Mantenimiento</h2>
+        <p>Repara el conducto de ventilación para avanzar al laboratorio médico.</p>
+        <button data-room="laboratorio">Siguiente Sala</button>
+    </div>
+
+    <div id="laboratorio" class="room">
+        <h2>Laboratorio Médico</h2>
+        <p>Descubre la debilidad del alien y encuentra el antídoto.</p>
+        <button data-room="motores">Siguiente Sala</button>
+    </div>
+
+    <div id="motores" class="room">
+        <h2>Sala de Motores</h2>
+        <p>Prepara los motores para la autodestrucción de la nave.</p>
+        <div id="simon-container">
+            <div id="red" class="color-button"></div>
+            <div id="green" class="color-button"></div>
+            <div id="blue" class="color-button"></div>
+            <div id="yellow" class="color-button"></div>
+        </div>
+        <button data-room="final">Terminar Juego</button>
+    </div>
+
+    <div id="final" class="room">
+        <h2>¡Has escapado!</h2>
+        <p>Has logrado escapar de la Nostromo justo a tiempo.</p>
+        <video controls autoplay>
+            <source src="nave_explotando.mp4" type="video/mp4">
+            Tu navegador no soporta la etiqueta de video.
+        </video>
+    </div>
+
+    <script src="../models/gameModel.js"></script>
+    <script src="../views/gameView.js"></script>
+    <script src="../controllers/gameController.js"></script>
+</body>
+</html>
+

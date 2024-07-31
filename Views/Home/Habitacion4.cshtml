@@ -1,0 +1,20 @@
+@{
+    ViewData["Title"] = "Sala de Motores";
+}
+
+<h1>Sala de Motores</h1>
+<p>La sala está llena de maquinaria pesada, tuberías de alta presión y paneles de control del motor. El ruido de las máquinas crea un ambiente tenso y opresivo.</p>
+
+<h2>Panel de Autodestrucción</h2>
+<p>Descubre el nombre del juego correcto para la autodestrucción de la nave:</p>
+<form Action='@Url.Action("Habitacion")'>
+    <input type="hidden" name="sala" value="4" />
+    <input type="text" name="clave" placeholder="Ingresa tu respuesta(primera letra en mayuscula)" />
+    <button type="submit">Enviar</button>
+</form>
+<button onclick="alert('Pista 1: Famoso juego el cual se obedece un accion si se dice su nombre')">Pista 1</button>
+<button onclick="alert('Pista 2: su nombre va seguido de la palabra: -dice-')">Pista 2</button>
+@if(ViewBag.Error != null)
+{
+    <p>@ViewBag.Error</p>
+}
